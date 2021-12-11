@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Map_Generator.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/CameraController.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/IngameConsoleScript.gd" type="Script" id=6]
+
+[node name="GameManager" type="Node"]
+
+[node name="Map_Generator" parent="." instance=ExtResource( 1 )]
+oct = 5
+per = 200.0
+pers = 0.625
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+script = ExtResource( 4 )
+
+[node name="Console" type="TextEdit" parent="Camera2D"]
+anchor_left = -0.5
+anchor_top = -0.5
+anchor_right = -0.3
+anchor_bottom = -0.45
+margin_left = -800.0
+margin_top = -450.0
+margin_right = -300.0
+margin_bottom = -200.0
+focus_mode = 0
+readonly = true
+highlight_current_line = true
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Console_Button" type="Button" parent="Camera2D"]
+margin_left = -800.0
+margin_top = -200.0
+margin_right = -700.0
+margin_bottom = -150.0
+text = "Console"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Generate_Button" type="Button" parent="Camera2D"]
+margin_left = 650.0
+margin_top = -450.0
+margin_right = 800.0
+margin_bottom = -400.0
+text = "Generate Map"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="add_text" from="Map_Generator" to="Camera2D/Console" method="_on_text_add"]
+[connection signal="add_text" from="Camera2D" to="Camera2D/Console" method="_on_text_add"]
+[connection signal="gen_map" from="Camera2D" to="Map_Generator" method="_on_gen_map"]
+[connection signal="on_move" from="Camera2D" to="Camera2D/Console" method="_on_move"]
+[connection signal="button_up" from="Camera2D/Console_Button" to="Camera2D/Console" method="_on_console_button"]
+[connection signal="button_up" from="Camera2D/Generate_Button" to="Map_Generator" method="_on_gen_map"]

@@ -1,0 +1,9 @@
+C:\Dev\Tribal_Survival\.mono\temp\bin\Debug\Tribal Survival.dll
+C:\Dev\Tribal_Survival\.mono\temp\bin\Debug\Tribal Survival.pdb
+C:\Dev\Tribal_Survival\.mono\temp\obj\Debug\Tribal Survival.csproj.AssemblyReference.cache
+C:\Dev\Tribal_Survival\.mono\temp\obj\Debug\Tribal Survival.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Tribal_Survival\.mono\temp\obj\Debug\Tribal Survival.AssemblyInfoInputs.cache
+C:\Dev\Tribal_Survival\.mono\temp\obj\Debug\Tribal Survival.AssemblyInfo.cs
+C:\Dev\Tribal_Survival\.mono\temp\obj\Debug\Tribal Survival.csproj.CoreCompileInputs.cache
+C:\Dev\Tribal_Survival\.mono\temp\obj\Debug\Tribal Survival.dll
+C:\Dev\Tribal_Survival\.mono\temp\obj\Debug\Tribal Survival.pdb

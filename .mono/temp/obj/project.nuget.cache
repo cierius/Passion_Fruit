@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rH84Gf8HvaNEUtfkkpbxpANVFKgU34Zi3z/n8g408yB4mmpAFC398r+BNEqfHS6JJZNzixaDD9XgUrHgYDHtHA==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Tribal_Survival\\Tribal Survival.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kanin\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\Kanin\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.0\\microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
