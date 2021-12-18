@@ -8,7 +8,7 @@
 
 [node name="Map_Generator" parent="." instance=ExtResource( 1 )]
 oct = 5
-per = 200.0
+per = 150.0
 pers = 0.625
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -58,3 +58,5 @@ __meta__ = {
 [connection signal="on_move" from="Camera2D" to="Camera2D/Console" method="_on_move"]
 [connection signal="button_up" from="Camera2D/Console_Button" to="Camera2D/Console" method="_on_console_button"]
 [connection signal="button_up" from="Camera2D/Generate_Button" to="Map_Generator" method="_on_gen_map"]
+
+[editable path="Map_Generator"]
